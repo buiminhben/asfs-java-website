@@ -622,6 +622,8 @@ https://templatemo.com/tm-586-scholar
             <br>
             - Gửi ngay mọi thắc mắc cho chúng tôi với biểu mẫu bên ngay bên cạnh...
             <br>
+            - Hãy cho chúng tôi thấy sự quan tâm của bạn đối với chúng tôi
+            <br>
             - Chúc các bạn một ngày tốt lành...
           </p>
          
