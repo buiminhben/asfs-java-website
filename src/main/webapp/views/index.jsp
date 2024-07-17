@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,8 +52,8 @@ https://templatemo.com/tm-586-scholar
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="/views/index.jsp" class="logo">
-                        <h1>ASFS</h1>
+                    <a href="/views/index.jsp" class="logo" style=" margin-right:30px">
+                        <img alt="" src="/views/images/logoASFS.png" style="max-width: 100px ">
 
                     </a>
                     <!-- ***** Logo End ***** -->
@@ -92,47 +92,29 @@ https://templatemo.com/tm-586-scholar
           <div class="owl-carousel owl-banner">
             <div class="item item-1">
               <div class="header-text">
-                <span class="category">Our Courses</span>
-                <h2>With Scholar Teachers, Everything Is Easier</h2>
-                <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
-                  </div>
-                </div>
+                <span class="category">ASSIST STUDENT FINDING SCHOOL</span>
+                <h2>Giới thiệu</h2>
+                <p>Chào mừng bạn đến với ASSIST STUDENT FINDING SCHOOL nền tảng tổng hợp thông tin chi tiết và toàn diện về các trường đại học tại Thành phố Hồ Chí Minh! Chúng tôi cam kết mang đến cho bạn một nguồn tài nguyên đáng tin cậy và phong phú để bạn có thể dễ dàng tìm kiếm và so sánh các trường đại học, từ đó đưa ra những quyết định sáng suốt cho tương lai học tập của mình.</p>
               </div>
             </div>
             <div class="item item-2">
               <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Get the best result out of your effort</h2>
-                <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
-                  </div>
-                </div>
+                <span class="category">ASSIST STUDENT FINDING SCHOOL</span>
+                <h2>Sứ mệnh của chúng tôi</h2>
+                <p>Tại ASSIST STUDENT FINDING SCHOOL sứ mệnh của chúng tôi là cung cấp những thông tin chính xác, cập nhật và toàn diện nhất về các trường đại học tại TP.HCM. Chúng tôi mong muốn trở thành cầu nối giữa các trường đại học và các bạn học sinh, sinh viên cũng như phụ huynh, giúp bạn có được cái nhìn tổng quan và chi tiết về các cơ sở giáo dục hàng đầu này.</p>
+              
               </div>
             </div>
             <div class="item item-3">
               <div class="header-text">
-                <span class="category">Online Learning</span>
-                <h2>Online Learning helps you save the time</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
-                  </div>
-                </div>
+                <span class="category">ASSIST STUDENT FINDING SCHOOL</span>
+                <h2>Những gì chúng tôi cung cấp</h2>
+                <ul class="text-white">
+                	<li>Giới thiệu trường: Lịch sử, sứ mệnh, tầm nhìn, và những điểm nổi bật của từng trường.</li>
+                	<li>Chương trình đào tạo: Danh sách các ngành học và chương trình từ đại học đến sau đại học.</li>
+                	<li>Cơ sở vật chất: Thông tin về các cơ sở học tập, phòng thí nghiệm, thư viện, ký túc xá, và các tiện ích khác.</li>
+                	<li>Tuyển sinh: Quy trình tuyển sinh, điều kiện đầu vào, thông tin học bổng, và hướng dẫn nộp hồ sơ.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -656,7 +638,7 @@ https://templatemo.com/tm-586-scholar
                 <fieldset>
                   <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
                 </fieldset>
-              </div>
+              </div> 
             </div>
           </form>
         </div>
@@ -667,12 +649,42 @@ https://templatemo.com/tm-586-scholar
 
 
   <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a> Distribution: <a href="https://themewagon.com" rel="nofollow" target="_blank">ThemeWagon</a></p>
-      </div>
+    <div class="container p-4">
+        <div class="row justify-content-center">
+            <!-- Logo section -->
+            <div class="col-lg-4 text-center">
+                <img src="/views/images/logoASFS.png" alt="Website Logo" class="img-fluid" style="width: 200px"> <br>
+                <h5 class="text-uppercase text-white mt-3">Assist Student Finding School</h5>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-3">
+                <h5 class="text-uppercase text-white">Useful Links</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a href="#!" class="text-white">Home</a></li>
+                    <li><a href="#!" class="text-white">About</a></li>
+                    <li><a href="#!" class="text-white">Services</a></li>
+                    <li><a href="#!" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+			<div class="col-3">
+                <h5 class="text-uppercase text-white">About US</h5>
+                <div class="text-white">Assist Student Finding School là nền tảng tổng hợp thông tin toàn diện về các trường đại học tại Thành phố Hồ Chí Minh. Chúng tôi cam kết cung cấp thông tin chính xác, cập nhật và đáng tin cậy để giúp học sinh, sinh viên và phụ huynh dễ dàng tìm kiếm và so sánh các trường đại học, từ đó đưa ra quyết định sáng suốt cho tương lai học tập.</div>
+            </div>
+			
+            <!-- Contact -->
+            <div class="col-lg-2 text-center">
+                <h5 class="text-uppercase text-white">Contact</h5>
+                <div>
+                    <a href="#!" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#!" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#!" class="text-white"><i class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
+
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
