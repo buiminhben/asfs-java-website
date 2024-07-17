@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -448,33 +448,37 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div> 
 
+                 <!-- phần của Vũ nè -->
   <div class="section testimonials">
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
           <div class="owl-carousel owl-testimonials">
             <div class="item">
-              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to download free templates. Thank you for visiting.”</p>
+              <p>“Trang web rất hữu ích, đã giúp mình chọn được ngôi trường phù hợp. 
+                <br>
+                Cảm ơn rất nhiều!!!!
+                ”</p>
               <div class="author">
-                <img src="/views/assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Full Stack Master</span>
-                <h4>Claude David</h4>
+                <img src="/views/images/gai.jpg" alt="">
+                <span class="category">Họ tên</span>
+                <h4>Gái xinh</h4>
               </div>
             </div>
             <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
+              <p>“Đỉnh quá các anh ơi!!!”</p>
               <div class="author">
-                <img src="/views/assets/images/testimonial-author.jpg" alt="">
-                <span class="category">UI Expert</span>
-                <h4>Thomas Jefferson</h4>
+                <img src="/views/images/bienne.jpg" alt="">
+                <span class="category">Họ tên</span>
+                <h4>Trần Vũ</h4>
               </div>
             </div>
             <div class="item">
-              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”</p>
+              <p>“Làm sao để mau giàu ạ!!!!”</p>
               <div class="author">
-                <img src="/views/assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Digital Animator</span>
-                <h4>Stella Blair</h4>
+                <img src="/views/images/vu.jpg" alt="">
+                <span class="category">Họ Tên</span>
+                <h4>Vũ Trần</h4>
               </div>
             </div>
           </div>
@@ -482,8 +486,13 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-5 align-self-center">
           <div class="section-heading">
             <h6>TESTIMONIALS</h6>
-            <h2>What they say about us?</h2>
-            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color, etc.</p>
+            <h2>Nhận xét</h2>
+            <p>Những nhận xét, đánh giá gửi về chúng tôi... 
+              <br>
+              Email: quangvutran0803@gmail.com
+              <br>
+              Hoặc thông qua gửi biểu mẫu bên dưới nè...
+            </p>
           </div>
         </div>
       </div>
@@ -598,21 +607,24 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
   </div>
-
+        
+                 <!-- phần của Vũ nè -->
  <div class="contact-us section" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 align-self-center">
-        <div class="section-heading">
+        <div class="section-heading ">
           <h6>Contact Us</h6>
-          <h2>Feel free to contact us anytime</h2>
-          <p>Thank you for choosing our templates. We provide you the best CSS templates at absolutely 100% free of charge. You may support us by sharing our website with your friends.</p>
-          <div class="special-offer">
-            <span class="offer">off<br><em>50%</em></span>
-            <h6>Valid: <em>24 April 2036</em></h6>
-            <h4>Special Offer <em>50%</em> OFF!</h4>
-            <a href="#"><i class="fa fa-angle-right"></i></a>
-          </div>
+          <h2 >Liên hệ</h2>
+          <p>-Cảm ơn bạn đã liên hệ, góp ý cho chúng tôi. 
+            <br>
+            -Những liên hệ đóng góp của các bạn là động lực giúp chúng tôi phát triển
+            <br>
+            - Gửi ngay mọi thắc mắc cho chúng tôi với biểu mẫu bên ngay bên cạnh...
+            <br>
+            - Chúc các bạn một ngày tốt lành...
+          </p>
+         
         </div>
       </div>
       <div class="col-lg-6">
@@ -621,22 +633,22 @@ https://templatemo.com/tm-586-scholar
             <div class="row">
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  <input type="text" name="name" id="name" placeholder="Họ tên" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="email" name="email" id="email" placeholder="Your E-mail..." required>
+                  <input type="email" name="email" id="email" placeholder="Email" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <textarea name="text" id="message" placeholder="Your Message"></textarea>
+                  <textarea name="text" id="message" placeholder="Tin nhắn của bạn"></textarea>
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                  <button type="submit" id="form-submit" class="orange-button">Gửi tin nhắn ngay</button>
                 </fieldset>
               </div> 
             </div>
