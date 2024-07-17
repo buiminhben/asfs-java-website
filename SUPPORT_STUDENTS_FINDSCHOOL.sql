@@ -1,0 +1,82 @@
+﻿-- Xóa cơ sở dữ liệu nếu đã tồn tại
+DROP DATABASE IF EXISTS SUPPORT_STUDENTS_FINDSCHOOL;
+
+-- Tạo lại cơ sở dữ liệu
+CREATE DATABASE SUPPORT_STUDENTS_FINDSCHOOL;
+USE SUPPORT_STUDENTS_FINDSCHOOL;
+
+-- Tạo bảng Accounts
+CREATE TABLE Accounts(
+	AccountID INT IDENTITY PRIMARY KEY,
+	Username VARCHAR(50) NOT NULL,
+	Password VARCHAR(50) NOT NULL
+);
+
+-- Tạo bảng Mass
+CREATE TABLE Mass(
+	MassID INT IDENTITY PRIMARY KEY,
+	MassName NVARCHAR(255) NOT NULL
+);
+
+-- Tạo bảng Major
+CREATE TABLE Major(
+	MajorID INT IDENTITY PRIMARY KEY,
+	MajorName NVARCHAR(255) NOT NULL,
+	Point FLOAT
+);
+
+-- Tạo bảng Mass_Major
+CREATE TABLE Mass_Major(
+	Mass_Major_ID INT IDENTITY PRIMARY KEY,
+	MajorID INT NOT NULL,
+	MassID INT NOT NULL,
+	FOREIGN KEY (MajorID) REFERENCES Major(MajorID),
+	FOREIGN KEY (MassID) REFERENCES Mass(MassID)
+);
+
+-- Tạo bảng School
+CREATE TABLE School(
+	SchoolID NVARCHAR(50) PRIMARY KEY,
+	SchoolName NVARCHAR(255) NOT NULL,
+	Address NVARCHAR(255) NOT NULL,
+	Phone NVARCHAR(10),
+	Website NVARCHAR(255),
+	Mass_Major_ID INT,
+	Information NVARCHAR(255),
+	FOREIGN KEY (Mass_Major_ID) REFERENCES Mass_Major(Mass_Major_ID)
+);
+
+-- Tạo bảng SchoolDetail
+CREATE TABLE SchoolDetail(
+	SchoolDetailsID NVARCHAR(50) PRIMARY KEY,
+	SchoolID NVARCHAR(50) NOT NULL,
+	Major NVARCHAR(255),
+	SchoolType NVARCHAR(50),
+	FOREIGN KEY (SchoolID) REFERENCES School(SchoolID)
+);
+
+-- Tạo bảng Major_School
+CREATE TABLE Major_School(
+	Major_School_ID INT IDENTITY PRIMARY KEY,
+	SchoolID NVARCHAR(50) NOT NULL,
+	MajorID INT NOT NULL,
+	FOREIGN KEY (SchoolID) REFERENCES School(SchoolID),
+	FOREIGN KEY (MajorID) REFERENCES Major(MajorID)
+);
+
+-- Tạo bảng BlogNews
+CREATE TABLE BlogNews(
+	BlogNewsID INT IDENTITY PRIMARY KEY,
+	Title NVARCHAR(255) NOT NULL,
+	Image NVARCHAR(255),
+	CreateDate DATE,
+	Credit NVARCHAR(255)
+);
+
+-- Tạo bảng UserComments
+CREATE TABLE UserComments(
+	UserCommentsID INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(50) NOT NULL,
+	Email NVARCHAR(50),
+	Text NVARCHAR(255)
+);
