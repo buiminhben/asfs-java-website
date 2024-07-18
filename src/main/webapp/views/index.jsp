@@ -67,9 +67,9 @@ https://templatemo.com/tm-586-scholar
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#top" class="active">Giới thiệu</a></li>
                       <li class="scroll-to-section"><a href="#services">Services</a></li>
-                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Tin tức</a></li>
                       <li class="scroll-to-section"><a href="#team">Team</a></li>
                       <li class="scroll-to-section"><a href="#events">Events</a></li>
                       <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
@@ -246,101 +246,21 @@ https://templatemo.com/tm-586-scholar
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>Latest Courses</h6>
-            <h2>Latest Courses</h2>
+            
+            <h2>Tin tức</h2>
           </div>
         </div>
       </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".design">Webdesign</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".development">Development</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wordpress">Wordpress</a>
-        </li>
-      </ul>
       <div class="row event_box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="/views/assets/images/course-01.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>160</h6></span>
+              <a href="https://vnexpress.net/huong-dan-dang-ky-xet-tuyen-dai-hoc-2024-chi-tiet-nhat-4771275.html" target="_blank"><img src="https://i1-vnexpress.vnecdn.net/2024/07/17/thithpt-39-jpg-1721210228-1721-5698-9626-1721210382.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=uVhd99Hwbn8Z9g9ptqbNBg" alt=""></a>
+              <span class="category">Cre: VNExpress</span>
             </div>
             <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Learn Web Design</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="/views/assets/images/course-02.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>340</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Cindy Walker</span>
-              <h4>Web Development Tips</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="/views/assets/images/course-03.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>640</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Latest Web Trends</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="/views/assets/images/course-04.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>450</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Online Learning Steps</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="/views/assets/images/course-05.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>320</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Sophia Rose</span>
-              <h4>Be a WordPress Master</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="/views/assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Full Stack Developer</h4>
+              <span class="author">Thí sinh có 10 ngày đăng ký, điều chỉnh nguyện vọng xét tuyển đại học trên hệ thống của Bộ Giáo dục và Đào tạo, bắt đầu từ ngày 18/7.</span>
+              <i>18/07/2024</i>
             </div>
           </div>
         </div>

@@ -141,7 +141,7 @@ body {
 .section-heading h2 {
   font-size: 36px;
   font-weight: 600;
-  text-transform: capitalize;
+  
   margin: 20px 0;
   line-height: 44px;
 }
@@ -700,7 +700,7 @@ Banner Style
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 5px 15px;
+  padding: 5px 5px;
   border-radius: 20px;
   display: inline-block;
   margin-bottom: 50px;
@@ -1000,8 +1000,8 @@ Courses Style
 
 .events_item .thumb span.category {
   position: absolute;
-  left: 30px;
-  top: 30px;
+  left: 5px;
+  top: 5px;
   font-size: 14px;
   text-transform: uppercase;
   color: #7a6ad8;
@@ -1055,8 +1055,9 @@ Courses Style
 
 .events_item .down-content span.author {
   color: #7a6ad8;
-  font-size: 15px;
+  font-size: 18px;
   display: inline-block;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 
