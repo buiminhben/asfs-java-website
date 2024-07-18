@@ -255,7 +255,23 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-              <a href="https://vnexpress.net/huong-dan-dang-ky-xet-tuyen-dai-hoc-2024-chi-tiet-nhat-4771275.html" target="_blank"><img src="https://i1-vnexpress.vnecdn.net/2024/07/17/thithpt-39-jpg-1721210228-1721-5698-9626-1721210382.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=uVhd99Hwbn8Z9g9ptqbNBg" alt=""></a>
+              <a href="https://vnexpress.net/huong-dan-dang-ky-xet-tuyen-dai-hoc-2024-chi-tiet-nhat-4771275.html" target="_blank">
+              	<img src="https://i1-vnexpress.vnecdn.net/2024/07/17/thithpt-39-jpg-1721210228-1721-5698-9626-1721210382.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=uVhd99Hwbn8Z9g9ptqbNBg" alt="">
+              </a>
+              <span class="category">Cre: VNExpress</span>
+            </div>
+            <div class="down-content">
+              <span class="author">Thí sinh có 10 ngày đăng ký, điều chỉnh nguyện vọng xét tuyển đại học trên hệ thống của Bộ Giáo dục và Đào tạo, bắt đầu từ ngày 18/7.</span>
+              <i>18/07/2024</i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://vnexpress.net/diem-san-dai-hoc-cong-thuong-tp-hcm-cao-nhat-20-4771344.html" target="_blank">
+              	<img src="https://i1-vnexpress.vnecdn.net/2024/07/17/z5579405325645-d48280e4ea7907c-6888-8180-1721227897.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=U4p3ywg4mXXdv_g4YiqM-A" alt="">
+              </a>
               <span class="category">Cre: VNExpress</span>
             </div>
             <div class="down-content">

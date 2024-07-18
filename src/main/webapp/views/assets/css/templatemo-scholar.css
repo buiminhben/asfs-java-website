@@ -161,7 +161,7 @@ body {
 .main-button a {
   display: inline-block;
   background-color: #fff;
-  color: #7a6ad8;
+  color: #7a6/d8;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -995,7 +995,11 @@ Courses Style
 }
 
 .events_item .thumb img {
-  margin-bottom: -5px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: -5px; /* Giữ lại thuộc tính margin-bottom */
+  
 }
 
 .events_item .thumb span.category {
