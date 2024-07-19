@@ -1,0 +1,47 @@
+.find_school {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .find_school .container {
+    text-align: center;
+  }
+  
+  .find_school .header {
+    margin-bottom: 20px;
+  }
+  
+  .find_school .text-center h3 {
+    margin-bottom: 20px;
+  }
+  
+  .find .selected,
+  .find .search-info {
+    margin-right: 10px;
+  }
+  
+  .find .search-info input {
+    width: 250px;
+  }
+  
+  .find_school .table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .find_school table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .find_school th, 
+  .find_school td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
