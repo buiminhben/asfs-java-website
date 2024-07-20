@@ -22,14 +22,7 @@
     <link rel="stylesheet" href="/views/assets/css/owl.css">
     <link rel="stylesheet" href="/src/main/webapp//views/assets/css/find_school.css">
     <link rel="stylesheet" href="/views/assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <!--
-
-TemplateMo 586 Scholar
-
-https://templatemo.com/tm-586-scholar
-
--->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />	
   </head>
 
   <body>
@@ -57,7 +50,7 @@ https://templatemo.com/tm-586-scholar
               <a href="/views/index.jsp" class="logo" style=" margin-right:30px">
                 <img alt="" src="/views/images/logoASFS.png" style="max-width: 100px ">
 
-<<<<<<< HEAD
+
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Serach Start ***** -->
@@ -83,39 +76,18 @@ https://templatemo.com/tm-586-scholar
                     <!-- ***** Menu End ***** -->
                 </nav>
             </div>
-=======
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Serach Start ***** -->
-              <div class="search-input">
-                <form id="search" action="#">
-                  <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword"
-                    onkeypress="handle" />
-                  <i class="fa fa-search"></i>
-                </form>
-              </div>
-              <!-- ***** Serach Start ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                <li class="scroll-to-section"><a href="#services">Services</a></li>
-                <li class="scroll-to-section"><a href="#courses">Courses</a></li>
-                <li class="scroll-to-section"><a href="#team">Team</a></li>
-                <li class="scroll-to-section"><a href="#events">Events</a></li>
-                <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
-              </ul>
-              <a class='menu-trigger'>
-                <span>Menu</span>
-              </a>
+
+           
+             
               <!-- ***** Menu End ***** -->
-            </nav>
+          
           </div>
->>>>>>> DevHoaiHung
+
         </div>
       </div>
     </header>
     <!-- ***** Header Area End ***** -->
-
+        <!-- Gioi thieu về website -->
     <div class="main-banner" id="top">
       <div class="container">
         <div class="row">
@@ -161,9 +133,9 @@ https://templatemo.com/tm-586-scholar
         </div>
       </div>
     </div>
+              <!-- Tìm trường ở đây -->
 
-
-    <div class="find_school mt-5">
+    <div class="find_school mt-5" id="services">
       <div class="container">
         <div class="row">
           <div class="header" style="background-color:#DCDCDC;">
@@ -220,55 +192,49 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
 
-
-    <div class="services section" id="services">
+      <!-- Bài viết blog -->
+    <section class="section courses" id="courses" >
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="icon">
-                <img src="/views/assets/images/service-01.png" alt="online degrees">
+          <div class="col-lg-12 text-center">
+            <div class="section-heading">
+              
+              <h2>Tin tức</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row event_box">
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="https://vnexpress.net/huong-dan-dang-ky-xet-tuyen-dai-hoc-2024-chi-tiet-nhat-4771275.html" target="_blank">
+                  <img src="https://i1-vnexpress.vnecdn.net/2024/07/17/thithpt-39-jpg-1721210228-1721-5698-9626-1721210382.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=uVhd99Hwbn8Z9g9ptqbNBg" alt="">
+                </a>
+                <span class="category">Cre: VNExpress</span>
               </div>
-              <div class="main-content">
-                <h4>Online Degrees</h4>
-                <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
-                <div class="main-button">
-                  <a href="#">Read More</a>
-                </div>
+              <div class="down-content">
+                <span class="author">Thí sinh có 10 ngày đăng ký, điều chỉnh nguyện vọng xét tuyển đại học trên hệ thống của Bộ Giáo dục và Đào tạo, bắt đầu từ ngày 18/7.</span>
+                <i>18/07/2024</i>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="icon">
-                <img src="/views/assets/images/service-02.png" alt="short courses">
+          <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+            <div class="events_item">
+              <div class="thumb">
+                <a href="https://vnexpress.net/diem-san-dai-hoc-cong-thuong-tp-hcm-cao-nhat-20-4771344.html" target="_blank">
+                  <img src="https://i1-vnexpress.vnecdn.net/2024/07/17/z5579405325645-d48280e4ea7907c-6888-8180-1721227897.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=U4p3ywg4mXXdv_g4YiqM-A" alt="">
+                </a>
+                <span class="category">Cre: VNExpress</span>
               </div>
-              <div class="main-content">
-                <h4>Short Courses</h4>
-                <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
-                <div class="main-button">
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="icon">
-                <img src="/views/assets/images/service-03.png" alt="web experts">
-              </div>
-              <div class="main-content">
-                <h4>Web Experts</h4>
-                <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
-                <div class="main-button">
-                  <a href="#">Read More</a>
-                </div>
+              <div class="down-content">
+                <span class="author">Thí sinh có 10 ngày đăng ký, điều chỉnh nguyện vọng xét tuyển đại học trên hệ thống của Bộ Giáo dục và Đào tạo, bắt đầu từ ngày 18/7.</span>
+                <i>18/07/2024</i>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="section about-us">
       <div class="container">
@@ -571,7 +537,7 @@ https://templatemo.com/tm-586-scholar
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
     <!-- phần của Vũ nè -->
     <div class="section testimonials">
@@ -580,11 +546,10 @@ https://templatemo.com/tm-586-scholar
           <div class="col-lg-7">
             <div class="owl-carousel owl-testimonials">
               <div class="item">
-                <p>“Trang web rất hữu ích, đã giúp mình chọn được ngôi trường phù hợp.
+                <p>“Trang web rất hữu ích, đã giúp mình chọn được ngôi trường phù hợp. 
                   <br>
                   Cảm ơn rất nhiều!!!!
-                  ”
-                </p>
+                  ”</p>
                 <div class="author">
                   <img src="/views/images/gai.jpg" alt="">
                   <span class="category">Họ tên</span>
@@ -609,180 +574,11 @@ https://templatemo.com/tm-586-scholar
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>About Us</h6>
-            <h2>What make us the best academy online?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
-            <div class="main-button">
-              <a href="#">Discover More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="section courses" id="courses" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            
-            <h2>Tin tức</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="https://vnexpress.net/huong-dan-dang-ky-xet-tuyen-dai-hoc-2024-chi-tiet-nhat-4771275.html" target="_blank">
-              	<img src="https://i1-vnexpress.vnecdn.net/2024/07/17/thithpt-39-jpg-1721210228-1721-5698-9626-1721210382.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=uVhd99Hwbn8Z9g9ptqbNBg" alt="">
-              </a>
-              <span class="category">Cre: VNExpress</span>
-            </div>
-            <div class="down-content">
-              <span class="author">Thí sinh có 10 ngày đăng ký, điều chỉnh nguyện vọng xét tuyển đại học trên hệ thống của Bộ Giáo dục và Đào tạo, bắt đầu từ ngày 18/7.</span>
-              <i>18/07/2024</i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="https://vnexpress.net/diem-san-dai-hoc-cong-thuong-tp-hcm-cao-nhat-20-4771344.html" target="_blank">
-              	<img src="https://i1-vnexpress.vnecdn.net/2024/07/17/z5579405325645-d48280e4ea7907c-6888-8180-1721227897.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=U4p3ywg4mXXdv_g4YiqM-A" alt="">
-              </a>
-              <span class="category">Cre: VNExpress</span>
-            </div>
-            <div class="down-content">
-              <span class="author">Thí sinh có 10 ngày đăng ký, điều chỉnh nguyện vọng xét tuyển đại học trên hệ thống của Bộ Giáo dục và Đào tạo, bắt đầu từ ngày 18/7.</span>
-              <i>18/07/2024</i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="team section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="/views/assets/images/member-01.jpg" alt="">
-              <span class="category">UX Teacher</span>
-              <h4>Sophia Rose</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="/views/assets/images/member-02.jpg" alt="">
-              <span class="category">Graphic Teacher</span>
-              <h4>Cindy Walker</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="/views/assets/images/member-03.jpg" alt="">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="/views/assets/images/member-04.jpg" alt="">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-
-                 <!-- phần của Vũ nè -->
-  <div class="section testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="owl-carousel owl-testimonials">
-            <div class="item">
-              <p>“Trang web rất hữu ích, đã giúp mình chọn được ngôi trường phù hợp. 
-=======
           <div class="col-lg-5 align-self-center">
             <div class="section-heading">
               <h6>TESTIMONIALS</h6>
               <h2>Nhận xét</h2>
-              <p>Những nhận xét, đánh giá gửi về chúng tôi...
->>>>>>> DevHoaiHung
+              <p>Những nhận xét, đánh giá gửi về chúng tôi... 
                 <br>
                 Email: quangvutran0803@gmail.com
                 <br>
@@ -793,6 +589,7 @@ https://templatemo.com/tm-586-scholar
         </div>
       </div>
     </div>
+
 
     <div class="section events" id="events">
       <div class="container">
@@ -911,9 +708,9 @@ https://templatemo.com/tm-586-scholar
             <div class="section-heading ">
               <h6>Contact Us</h6>
               <h2>Liên hệ</h2>
-              <p>-Cảm ơn bạn đã liên hệ, góp ý cho chúng tôi.
+              <p>- Cảm ơn bạn đã liên hệ, góp ý cho chúng tôi.
                 <br>
-                -Những liên hệ đóng góp của các bạn là động lực giúp chúng tôi phát triển
+                - Những liên hệ đóng góp của các bạn là động lực giúp chúng tôi phát triển
                 <br>
                 - Gửi ngay mọi thắc mắc cho chúng tôi với biểu mẫu bên ngay bên cạnh...
                 <br>
