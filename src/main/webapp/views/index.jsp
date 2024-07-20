@@ -1,7 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-  <!DOCTYPE html>
-  <html lang="en">
 
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+  <!DOCTYPE html>
+  <html xmlns:th="http://www.thymeleaf.org">
   <head>
 
     <meta charset="utf-8">
@@ -542,54 +544,41 @@
     <!-- phần của Vũ nè -->
     <div class="section testimonials">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="owl-carousel owl-testimonials">
-              <div class="item">
-                <p>“Trang web rất hữu ích, đã giúp mình chọn được ngôi trường phù hợp. 
-                  <br>
-                  Cảm ơn rất nhiều!!!!
-                  ”</p>
-                <div class="author">
-                  <img src="/views/images/gai.jpg" alt="">
-                  <span class="category">Họ tên</span>
-                  <h4>Gái xinh</h4>
-                </div>
+          <div class="row">
+              <div class="col-lg-7">
+                  <div class="owl-carousel owl-testimonials">
+                      <!-- Lặp qua danh sách nhận xét và hiển thị -->
+                      <c:forEach var="comment" items="${comments}">
+                          <div class="item">
+                              <p>${comment.text}</p>
+                              <div class="author">
+                                  <!-- Giả sử bạn lưu ảnh trong thư mục 'images' -->
+                                 
+                                  <span class="category">Email: ${comment.email}</span>
+                                  <h4>Họ tên: ${comment.name}</h4>
+                              </div>
+                          </div>
+                      </c:forEach>
+                  </div>
               </div>
-              <div class="item">
-                <p>“Đỉnh quá các anh ơi!!!”</p>
-                <div class="author">
-                  <img src="/views/images/bienne.jpg" alt="">
-                  <span class="category">Họ tên</span>
-                  <h4>Trần Vũ</h4>
+              <div class="col-lg-5 align-self-center">
+                <div class="section-heading">
+                    <h6>TESTIMONIALS</h6>
+                    <h2>Nhận xét</h2>
+                    <p>Những nhận xét, đánh giá gửi về chúng tôi...
+                        <br>
+                        Email: quangvutran0803@gmail.com
+                        <br>
+                        Hoặc thông qua gửi biểu mẫu bên dưới nè...
+                    </p>
                 </div>
-              </div>
-              <div class="item">
-                <p>“Làm sao để mau giàu ạ!!!!”</p>
-                <div class="author">
-                  <img src="/views/images/vu.jpg" alt="">
-                  <span class="category">Họ Tên</span>
-                  <h4>Vũ Trần</h4>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-5 align-self-center">
-            <div class="section-heading">
-              <h6>TESTIMONIALS</h6>
-              <h2>Nhận xét</h2>
-              <p>Những nhận xét, đánh giá gửi về chúng tôi... 
-                <br>
-                Email: quangvutran0803@gmail.com
-                <br>
-                Hoặc thông qua gửi biểu mẫu bên dưới nè...
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
+
+      <!-- EVENT -->
 
     <div class="section events" id="events">
       <div class="container">
@@ -699,59 +688,63 @@
         </div>
       </div>
     </div>
+                <!-- của vũ -->
 
-    <!-- phần của Vũ nè -->
-    <div class="contact-us section" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 align-self-center">
-            <div class="section-heading ">
-              <h6>Contact Us</h6>
-              <h2>Liên hệ</h2>
-              <p>- Cảm ơn bạn đã liên hệ, góp ý cho chúng tôi.
-                <br>
-                - Những liên hệ đóng góp của các bạn là động lực giúp chúng tôi phát triển
-                <br>
-                - Gửi ngay mọi thắc mắc cho chúng tôi với biểu mẫu bên ngay bên cạnh...
-                <br>
-                - Hãy cho chúng tôi thấy sự quan tâm của bạn đối với chúng tôi
-                <br>
-                - Chúc các bạn một ngày tốt lành...
-              </p>
 
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="contact-us-content">
-              <form id="contact-form" action="/api/comments/submit" method="post">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <input type="text" name="name" id="name" placeholder="Họ tên" autocomplete="on" required>
-                    </fieldset>
+                <div class="contact-us section" id="contact">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-6 align-self-center">
+                              <div class="section-heading">
+                                  <h6>Contact Us</h6>
+                                  <h2>Liên hệ</h2>
+                                  <p>- Cảm ơn bạn đã liên hệ, góp ý cho chúng tôi.
+                                      <br>
+                                      - Những liên hệ đóng góp của các bạn là động lực giúp chúng tôi phát triển
+                                      <br>
+                                      - Gửi ngay mọi thắc mắc cho chúng tôi với biểu mẫu bên ngay bên cạnh...
+                                      <br>
+                                      - Hãy cho chúng tôi thấy sự quan tâm của bạn đối với chúng tôi
+                                      <br>
+                                      - Chúc các bạn một ngày tốt lành...
+                                  </p>
+                                 
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="contact-us-content">
+                                  <form id="contact-form" action="/index/comments/create" method="post">
+                                      <div class="row">
+                                          <div class="col-lg-12">
+                                              <fieldset>
+                                                  <input type="text" name="name" id="name" placeholder="Họ tên"  required>
+                                              </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                              <fieldset>
+                                                  <input type="email" name="email" id="email" placeholder="Email" required>
+                                              </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                              <fieldset>
+                                                  <textarea name="text" id="message" placeholder="Tin nhắn của bạn" required></textarea>
+                                              </fieldset>
+                                          </div>
+                                          <div class="col-lg-12">
+                                              <fieldset>
+                                                  <button type="submit" id="form-submit" class="orange-button">Gửi tin nhắn ngay</button>
+                                              </fieldset>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <input type="email" name="email" id="email" placeholder="Email" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="text" id="message" placeholder="Tin nhắn của bạn"></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="orange-button">Gửi tin nhắn ngay</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              </div>
+              
+  
+  
 
 
     <footer>
