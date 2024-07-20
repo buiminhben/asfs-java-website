@@ -478,68 +478,116 @@
       </div>
     </div>
 
-    <div class="team section" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="/views/assets/images/member-01.jpg" alt="">
-                <span class="category">UX Teacher</span>
-                <h4>Sophia Rose</h4>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="/views/assets/images/member-02.jpg" alt="">
-                <span class="category">Graphic Teacher</span>
-                <h4>Cindy Walker</h4>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="/views/assets/images/member-03.jpg" alt="">
-                <span class="category">Full Stack Master</span>
-                <h4>David Hutson</h4>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="team-member">
-              <div class="main-content">
-                <img src="/views/assets/images/member-04.jpg" alt="">
-                <span class="category">Digital Animator</span>
-                <h4>Stella Blair</h4>
-                <ul class="social-icons">
-                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-              </div>
+  <!-- Giới thiệu Team -->
+  <div class="team section" id="team">
+    <div class="container">
+     <!-- row chứa: Quân, Hưng, Hiếu -->
+      <div class="row mb-5">
+
+        <!-- Quân -->
+        <div class="col-lg-4 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="/views/images/TeamImages/Quan.jpg" alt="" >
+              <span class="category">Backend Developer</span>
+              <h4>Bùi Minh Quân</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/quanbui.brvt"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
         </div>
+
+        <!-- Hưng -->
+        <div class="col-lg-4 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="/views/images/TeamImages/Hung.jpg" alt="" >
+              <span class="category">Full-Stack Developer</span>
+              <h4>Võ Hoài Hưng</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hiếu -->
+        <div class="col-lg-4 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="/views/images/TeamImages/Hieu.jpg" alt="" >
+              <span class="category">Backend Developer</span>
+              <h4>Phan Chí Hiếu</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/phc.hieuu"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+     
       </div>
-    </div> 
+
+       <!-- row chứa: Vũ, Thân, Tài -->
+       <div class="row" style="margin-top: 130px;">
+        
+        <!-- vũ -->
+        <div class="col-lg-4 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="/views/images/TeamImages/Vu.jpg" alt="" >
+              <span class="category">Backend Developer</span>
+              <h4>Trần Quang Vũ</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/vu.tranquang.18400"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thân -->
+        <div class="col-lg-4 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="/views/images/TeamImages/Than.jpg" alt="">
+              <span class="category">Backend Developer</span>
+              <h4>Nguyễn Trần Thân</h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100035874030082"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tài -->
+        <div class="col-lg-4 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="/views/images/TeamImages/Tai.jpg" alt="" >
+              <span class="category">Full-Stack Developer</span>
+              <h4>Trần Tú Tài</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+     
+      </div>
+    </div>
+  </div> 
 
     <!-- phần của Vũ nè -->
     <div class="section testimonials">
