@@ -11,6 +11,9 @@ import org.springframework.stereotype.Repository;
 public interface UserCommentDao extends JpaRepository<UserComments, Integer> {
 	
 	List<UserComments> findByName(String name);
-
+	
+	
+	UserComments findByUserCommentId(Integer userCommentId);
+	
 
 }

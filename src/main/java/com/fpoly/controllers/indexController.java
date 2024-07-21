@@ -1,6 +1,7 @@
 package com.fpoly.controllers;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,9 +23,12 @@ public class indexController {
 
     @GetMapping("/home")
     public String home(Model model) {
-        List<UserComments> comments = userDao.findAll();
-        System.out.println("Comments: " + comments); // Debugging line
-        model.addAttribute("comments", comments);
+    	List<UserComments> allComments = userDao.findAll();
+        List<UserComments> filteredComments = allComments.stream()
+            .filter(comment -> Boolean.TRUE.equals(comment.getStatus()))
+            .collect(Collectors.toList());
+        System.out.println("Comments: " + filteredComments); // Debugging line
+        model.addAttribute("comments", filteredComments);
         return "index";
     }
 
@@ -37,5 +41,6 @@ public class indexController {
         return "redirect:/index/home";
     }
 
+ 
   
 }

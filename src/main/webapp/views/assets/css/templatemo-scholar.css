@@ -141,7 +141,7 @@ body {
 .section-heading h2 {
   font-size: 36px;
   font-weight: 600;
-  
+  text-transform: capitalize;
   margin: 20px 0;
   line-height: 44px;
 }
@@ -161,7 +161,7 @@ body {
 .main-button a {
   display: inline-block;
   background-color: #fff;
-  color: #7a6/d8;
+  color: #7a6ad8;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -700,7 +700,7 @@ Banner Style
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
-  padding: 5px 5px;
+  padding: 5px 15px;
   border-radius: 20px;
   display: inline-block;
   margin-bottom: 50px;
@@ -995,17 +995,13 @@ Courses Style
 }
 
 .events_item .thumb img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  margin-bottom: -5px; /* Giữ lại thuộc tính margin-bottom */
-  
+  margin-bottom: -5px;
 }
 
 .events_item .thumb span.category {
   position: absolute;
-  left: 5px;
-  top: 5px;
+  left: 30px;
+  top: 30px;
   font-size: 14px;
   text-transform: uppercase;
   color: #7a6ad8;
@@ -1059,9 +1055,8 @@ Courses Style
 
 .events_item .down-content span.author {
   color: #7a6ad8;
-  font-size: 18px;
+  font-size: 15px;
   display: inline-block;
-  font-weight: 500;
   margin-bottom: 6px;
 }
 

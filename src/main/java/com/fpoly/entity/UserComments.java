@@ -29,7 +29,7 @@ public class UserComments {
 	private String text;
 	
 	@Column(name = "Status")
-	private Boolean status;
+	private Boolean status = true;
 
 
 
