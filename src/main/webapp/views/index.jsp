@@ -598,7 +598,7 @@
                       <!-- Lặp qua danh sách nhận xét và hiển thị -->
                       <c:forEach var="comment" items="${comments}">
                           <div class="item">
-                              <p>${comment.text}</p>
+                              <h3 class="text-white fst-italic">"${comment.text}"</h3>
                               <div class="author">
                                   <!-- Giả sử bạn lưu ảnh trong thư mục 'images' -->
                                  
