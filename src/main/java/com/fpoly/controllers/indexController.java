@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.fpoly.dao.NewDao;
 import com.fpoly.dao.UserCommentDao;
+import com.fpoly.entity.New;
 import com.fpoly.entity.UserComments;
 
 @Controller
@@ -21,6 +23,9 @@ public class indexController {
     @Autowired
     private UserCommentDao userDao;
 
+    @Autowired
+    NewDao newDao;
+    
     @GetMapping("/home")
     public String home(Model model) {
     	List<UserComments> allComments = userDao.findAll();
@@ -29,6 +34,9 @@ public class indexController {
             .collect(Collectors.toList());
         System.out.println("Comments: " + filteredComments); // Debugging line
         model.addAttribute("comments", filteredComments);
+        //new
+        List<New> list_new = newDao.findAll();
+        model.addAttribute("list_new", list_new);
         return "index";
     }
 

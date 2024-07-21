@@ -996,12 +996,14 @@ Courses Style
 
 .events_item .thumb img {
   margin-bottom: -5px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .events_item .thumb span.category {
   position: absolute;
-  left: 30px;
-  top: 30px;
+  left: 5px;
+  top: 5px;
   font-size: 14px;
   text-transform: uppercase;
   color: #7a6ad8;
