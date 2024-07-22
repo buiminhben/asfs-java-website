@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="Mass_Major")
+@Table(name = "Mass_Major")
 @Data
 public class Mass_Major implements Serializable {
     @Id
@@ -24,7 +24,7 @@ public class Mass_Major implements Serializable {
     @Column(name = "MajorId", insertable = false, updatable = false)
     private int majorId;
 
-    @Column(name="MassID", columnDefinition = "NVARCHAR(10)", insertable = false, updatable = false)
+    @Column(name = "MassID",insertable=false, updatable=false)
     private String massID;
 
     @ManyToOne
