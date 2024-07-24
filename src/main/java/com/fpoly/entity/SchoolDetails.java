@@ -24,9 +24,6 @@ public class SchoolDetails implements Serializable {
     @Column(name = "Major",columnDefinition = "NVARCHAR(255)")
     private String Major;
 
-    @Column(name = "ShoolType")
-    private String schoolType;
-
     @Column(name = "ShoolId")
     private int SchoolId;
 
