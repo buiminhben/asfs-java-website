@@ -17,17 +17,16 @@ import lombok.Data;
 @Data
 public class SchoolDetails implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DetailId")
     private int DetailID;
 
-    @Column(name = "Major",columnDefinition = "NVARCHAR(255)")
+    @Column(name = "Major",columnDefinition = "NVARCHAR(MAX)")
     private String Major;
 
-    @Column(name = "ShoolId")
-    private int SchoolId;
+    @Column(name="SchoolId")
+    private int schoolId;
 
     @OneToOne
-    @JoinColumn(name = "SchoolId")
+    @JoinColumn(name = "SchoolId", insertable = false, updatable = false)
     private School school;
 }

@@ -10,7 +10,6 @@ import lombok.*;
 @Data
 public class Major implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MajorId")
     private int majorId;
 

@@ -13,9 +13,8 @@ import lombok.Setter;
 public class Major_School implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Major_SchoolId")
-    private int majorSchoolId; // Cột này là cột auto-increment
+    @Column(name = "Major_SchoolId", columnDefinition = "VARCHAR(10)")
+    private String majorSchoolId; // Cột này là cột auto-increment
 
     @Column(name = "SchoolId")
     private int schoolId;

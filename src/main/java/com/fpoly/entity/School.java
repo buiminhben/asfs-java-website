@@ -13,7 +13,6 @@ import lombok.Setter;
 @Getter @Setter
 public class School implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "SchoolId")
     private int schoolId;
 

@@ -17,14 +17,13 @@ import lombok.Data;
 @Data
 public class Mass_Major implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Mass_Major")
     private int mass_major;
 
     @Column(name = "MajorId", insertable = false, updatable = false)
     private int majorId;
 
-    @Column(name = "MassID",insertable=false, updatable=false)
+    @Column(name = "MassID")
     private String massID;
 
     @ManyToOne
@@ -32,6 +31,6 @@ public class Mass_Major implements Serializable {
     private Major major;
 
     @ManyToOne
-    @JoinColumn(name = "MassID")
+    @JoinColumn(name = "MassID",insertable=false, updatable=false)
     private Mass mass;
 }

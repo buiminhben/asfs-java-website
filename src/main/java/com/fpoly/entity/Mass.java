@@ -18,8 +18,6 @@ public class Mass implements Serializable {
     @Column(name = "MassID")
     private String massID;
 
-    @Column(name = "MajorId")
-    private int majorId;
 
     @Column(name = "MassName")
     private String massName;
