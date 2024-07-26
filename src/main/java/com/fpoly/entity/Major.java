@@ -13,7 +13,7 @@ public class Major implements Serializable {
     @Column(name = "MajorId")
     private int majorId;
 
-    @Column(name = "MajorName")
+    @Column(name = "MajorName",columnDefinition = "NVARCHAR(MAX)")
     private String majorName;
 
     @OneToMany(mappedBy = "major")

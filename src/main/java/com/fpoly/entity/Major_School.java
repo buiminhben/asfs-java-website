@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Major_School implements Serializable {
 
     @Id
-    @Column(name = "Major_SchoolId")
+    @Column(name = "Major_SchoolId", columnDefinition = "VARCHAR(10)")
     private String majorSchoolId; // Cột này là cột auto-increment
 
     @Column(name = "SchoolId")

@@ -19,7 +19,7 @@ public class Mass implements Serializable {
     private String massID;
 
 
-    @Column(name = "MassName")
+    @Column(name = "MassName",columnDefinition = "NVARCHAR(MAX)")
     private String massName;
 
     @OneToMany(mappedBy = "mass")

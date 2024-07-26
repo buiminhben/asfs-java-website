@@ -26,7 +26,7 @@ import com.fpoly.entity.UserComments;
 import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
-@RequestMapping("/index")
+@RequestMapping("admin")
 public class adminController {
 
 	@Autowired
@@ -34,7 +34,7 @@ public class adminController {
 	
 	@Autowired
 	NewDao newDao;
-	@GetMapping("/admin")
+	@GetMapping("/home")
 	public String Admin(Model model) {
 		List<UserComments> comments = userDao.findAll();
 		System.out.println("Comments: " + comments); // Debugging line
@@ -64,13 +64,13 @@ public class adminController {
 //			return "adminComment";
 //		}
 
-		return "redirect:/index/admin";
+		return "redirect:/admin/home";
 	}
 
 	@GetMapping("/delete/{id}")
 	public String delete(@PathVariable("id") Integer id, Model model) {
 		userDao.deleteById(id);
-		return "redirect:/index/admin";
+		return "redirect:/admin/home";
 	}
 
 	@RequestMapping(value = "/admin/news")
@@ -90,7 +90,7 @@ public class adminController {
 	@RequestMapping(value="/admin/news/delete/{newId}", method=RequestMethod.POST)
 	public String requestMethodName(@PathVariable("newId")int id) {
 		newDao.deleteById(id);
-		return "redirect:/index/admin/news";
+		return "redirect:/admin/news";
 	}
 	@RequestMapping(value="/admin/news/create", method=RequestMethod.POST)
 	public String createNew(New n,Model model) {
@@ -103,7 +103,7 @@ public class adminController {
         } else {
         	model.addAttribute("mes", "ID đã tồn tại");
         }
-		return "forward:/index/admin/news";
+		return "forward:/admin/news";
 	}
 	@RequestMapping(value="/admin/news/update", method=RequestMethod.POST)
 	public String updatenews(New n,Model model) {
@@ -116,8 +116,6 @@ public class adminController {
 	        } else {
 	        	model.addAttribute("mes", "ID không tồn tại");
 	        }
- 		return "forward:/index/admin/news";
+ 		return "forward:/admin/news";
 	}
-	
-
 }
