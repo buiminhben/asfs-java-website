@@ -15,6 +15,7 @@ import lombok.Data;
 @Table(name="UserComments")
 public class UserComments {
 	@Id
+	 @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "UserCommentId")
 	private int userCommentId;
 	

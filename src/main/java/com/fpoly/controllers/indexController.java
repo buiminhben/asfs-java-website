@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fpoly.Service.SchoolService;
 import com.fpoly.dao.NewDao;
+import com.fpoly.dao.SchoolDao;
 import com.fpoly.dao.UserCommentDao;
 import com.fpoly.entity.Major;
 import com.fpoly.entity.New;
@@ -26,6 +27,9 @@ import java.util.stream.Collectors;
 @Controller
 @RequestMapping("/index")
 public class indexController {
+	
+	@Autowired
+	private SchoolDao shoolDao;
 
     @Autowired
     private UserCommentDao userDao;
@@ -48,7 +52,7 @@ public class indexController {
         model.addAttribute("list_new", list_new);
 
         // Hiển thị tất cả trường
-        model.addAttribute("schools", schoolService.findSchoolsByCriteria(null, null, null, null, null));
+        model.addAttribute("schools", shoolDao.findTop3By());
 
         // Đổ dữ liệu vào combobox ngành
         List<Major> majors = schoolService.getAllMajors();

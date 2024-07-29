@@ -156,7 +156,7 @@
 
 
 				<!-- Tìm trường ở đây (Hoài Hưng) -->
-				<div class="find_school mt-5">
+				<div class="find_school mt-5" id="services">
 					<div class="container">
 						<div class="row">
 							<div class="header"

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.fpoly.entity.Account;
 
-public interface AccountDao extends JpaRepository<Account, String>{
+public interface AccountDao extends JpaRepository<Account, Integer>{
 	Account findByUserName(String userName);
 
 }
