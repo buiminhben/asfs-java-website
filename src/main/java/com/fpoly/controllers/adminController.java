@@ -42,7 +42,7 @@ public class adminController {
 		return "adminComment"; // Ensure this matches your Thymeleaf template name
 	}
 
-	@RequestMapping(value = "/admin/updateStatus/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/updateStatus/{id}", method = RequestMethod.GET)
 	public String update(@PathVariable("id") Integer id, Model model, @RequestParam(name = "status") Boolean status) {
 
 		if (status == null) {

@@ -9,7 +9,7 @@ SELECT * From school_details;
 go
 -- Them du lieu bang Account
 INSERT INTO [dbo].[account] (account_id, password, user_name) VALUES (1, N'12345', N'admin');
-
+go
 
 -- Them du lieu bang New
 INSERT INTO [dbo].[news] (cre_date, created, link_image, link, title) VALUES 

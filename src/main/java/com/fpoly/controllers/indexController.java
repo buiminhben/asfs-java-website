@@ -51,7 +51,7 @@ public class indexController {
         List<New> list_new = newDao.findAll();
         model.addAttribute("list_new", list_new);
 
-        // Hiển thị tất cả trường
+        // Hiển thị 3 trường
         model.addAttribute("schools", shoolDao.findTop3By());
 
         // Đổ dữ liệu vào combobox ngành

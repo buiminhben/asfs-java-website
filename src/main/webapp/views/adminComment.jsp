@@ -115,7 +115,7 @@
                                 </div>
                             </td>
                             <td>
-                           <button  formmethod="get" formaction="/index/admin/updateStatus/${Usercmt.userCommentId}"
+                           <button  formmethod="get" formaction="/admin/updateStatus/${Usercmt.userCommentId}"
 				class="btn btn-primary">Cập nhật</button>
 				
 				<button  formmethod="get" formaction="/index/delete/${Usercmt.userCommentId}"
