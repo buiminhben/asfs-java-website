@@ -35,10 +35,10 @@
         <div class="alert alert-danger">${mes}</div>
         </c:if>
         <div class="mt-3">
-            <button class="btn btn-outline-info" formaction="/index/admin/news/create">Create</button>
-            <button class="btn btn-outline-info" formaction="/index/admin/news/update">Update</button>
-            <button class="btn btn-outline-info" formaction="/index/admin/news/delete/${tt.newId}">Delete</button>
-            <button class="btn btn-outline-info" formaction="/index/admin/news">Reset</button>
+            <button class="btn btn-outline-info" formaction="/admin/news/create">Create</button>
+            <button class="btn btn-outline-info" formaction="/admin/news/update">Update</button>
+            <button class="btn btn-outline-info" formaction="/admin/news/delete/${tt.newId}">Delete</button>
+            <button class="btn btn-outline-info" formaction="/admin/news">Reset</button>
         </div>
     </form>
     <table class="table table-striped table-bordered mt-3 ">
@@ -59,7 +59,7 @@
             <td>${n.link_image}</td>
             <td>${n.title}</td>
             <td>${n.createDate}</td>
-            <td><a href="/index/admin/news/edit/${n.newId}">Edit</a></td>
+            <td><a href="/admin/news/edit/${n.newId}">Edit</a></td>
         </tr>
         </c:forEach>
     </table>

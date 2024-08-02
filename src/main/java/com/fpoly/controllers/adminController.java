@@ -73,13 +73,13 @@ public class adminController {
 		return "redirect:/admin/home";
 	}
 
-	@RequestMapping(value = "/admin/news")
+	@RequestMapping(value = "/news")
 	public String news(@ModelAttribute("tintuc")New tintuc,Model model) {
         List<New> list_new = newDao.findAll();
         model.addAttribute("list_news", list_new);
 		return "news";
 	}
-	@RequestMapping(value="/admin/news/edit/{newId}", method=RequestMethod.GET)
+	@RequestMapping(value="/news/edit/{newId}", method=RequestMethod.GET)
 	public String editnew(@PathVariable("newId")int id,Model model) {
 		New n = newDao.findById(id).get();
 		model.addAttribute("tt", n);
@@ -87,12 +87,12 @@ public class adminController {
         model.addAttribute("list_news", list_new);
 		return "news";
 	}
-	@RequestMapping(value="/admin/news/delete/{newId}", method=RequestMethod.POST)
+	@RequestMapping(value="/news/delete/{newId}", method=RequestMethod.POST)
 	public String requestMethodName(@PathVariable("newId")int id) {
 		newDao.deleteById(id);
 		return "redirect:/admin/news";
 	}
-	@RequestMapping(value="/admin/news/create", method=RequestMethod.POST)
+	@RequestMapping(value="/news/create", method=RequestMethod.POST)
 	public String createNew(New n,Model model) {
 		List<New> newList = newDao.findAll();
         List<Integer> ids = newList.stream()
@@ -105,7 +105,7 @@ public class adminController {
         }
 		return "forward:/admin/news";
 	}
-	@RequestMapping(value="/admin/news/update", method=RequestMethod.POST)
+	@RequestMapping(value="/news/update", method=RequestMethod.POST)
 	public String updatenews(New n,Model model) {
 		 List<New> newList = newDao.findAll();
 	        List<Integer> ids = newList.stream()

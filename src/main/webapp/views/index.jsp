@@ -255,20 +255,23 @@
 							</div>
 						</div>
 						<div class="row event_box">
-							<c:forEach var="n" items="${list_new}">
-								<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-									<div class="events_item">
-										<div class="thumb">
-											<a href="${n.link_news}" target="_blank"> <img src="${n.link_image}" alt="">
-											</a> <span class="category">Cre: ${n.created}</span>
-										</div>
-										<div class="down-content">
-											<span class="author">${n.title}</span> <i>${n.createDate}</i>
-										</div>
-									</div>
-								</div>
-							</c:forEach>
-						</div>
+        <c:forEach var="n" items="${list_new}">
+            <div class="col-lg-4 col-md-6 align-self-center event_outer design">
+                <div class="events_item">
+                    <div class="thumb">
+                        <a href="${n.link_news}" target="_blank">
+                            <img src="${n.link_image}" alt="">
+                        </a>
+                        <span class="category">Cre: ${n.created}</span>
+                    </div>
+                    <div class="down-content">
+                        <span class="author title" data-title="${n.title}">${n.title}</span>
+                        <i>${n.createDate}</i>
+                    </div>
+                </div>
+            </div>
+        </c:forEach>
+    </div>
 					</div>
 				</section>
 				<!-- Giới thiệu Team -->
@@ -532,6 +535,19 @@
 						window.location.href = "/index/home";
 					}
 				</script>
+				 <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const titleElements = document.querySelectorAll('.title');
+            const maxLength = 80; // Giới hạn số lượng ký tự
+
+            titleElements.forEach(el => {
+                const originalTitle = el.getAttribute('data-title');
+                if (originalTitle.length > maxLength) {
+                    el.textContent = originalTitle.substring(0, maxLength) + '...';
+                }
+            });
+        });
+    </script>
 			</body>
 
 			</html>
