@@ -9,7 +9,7 @@ SELECT * From school_details;
 go
 -- Them du lieu bang Account
 INSERT INTO [dbo].[account] (account_id, password, user_name) VALUES (1, N'12345', N'admin');
-go
+
 
 -- Them du lieu bang New
 INSERT INTO [dbo].[news] (cre_date, created, link_image, link, title) VALUES 
@@ -38,15 +38,13 @@ INSERT INTO [dbo].[news] (cre_date, created, link_image, link, title) VALUES
 INSERT INTO [dbo].[school] (school_id, address, information, phone, shool_name, type_school, website)
 VALUES
 (1, N'65 Huỳnh Thúc Kháng, Phường Bến Nghé, Q1, TP. Hồ Chí Minh', NULL, N'(028).3821.2360', N'Cao đẳng Kỹ thuật Cao Thắng', N'Công lập', N'http://caothang.edu.vn/'),
-(2, N'Trụ sở chính: Số 02 Mai Thị Lựu, Phường Đakao, Quận 1, TP.HCM; Cơ sở đào tạo 1: 30 Nguyễn Văn Dung, Phường 6, Quận Gò Vấp, TP.HCM; Cơ sở đào tạo 2: Khu Đô thị Tây Bắc thành phố, xã Tân An Hội, Huyện Củ Chi, TP.HCM, Việt Nam', NULL, N'028.3822.3758/ 028.3829.9317', N'Cao đẳng Kỹ thuật Nguyễn Trường Tộ', NULL, N'https://www.nguyentruongto.edu.vn/vn/'),
+(2, N'Số 02 Mai Thị Lựu, Phường Đakao, Quận 1, TP.HCM', NULL, N'028.3822.3758/ 028.3829.9317', N'Cao đẳng Kỹ thuật Nguyễn Trường Tộ', NULL, N'https://www.nguyentruongto.edu.vn/vn/'),
 (3, N'390 Hoàng Văn Thụ, Phường 4, Q. Tân Bình, TP. Hồ Chí Minh', NULL, N'028.3811.0521', N'Cao đẳng Lý Tự Trọng thành phố Hồ Chí Minh', N'Công lập', N'http://lttc.edu.vn/'),
 (4, N'416 Đường số 10 (số cũ 64/2B Cây Trâm), P.9, Q.Gò vấp, Tp.Hồ Chí Minh', NULL, N'028.3989.3967 / 028.3989.3968', N'Cao đẳng Miền Nam', N'Công lập', N'www.cdmiennam.edu.vn'),
-(5, N'347A Nguyễn Thượng Hiền, Phường 11, Quận 10, Tp.HCM; Cơ sở Kỳ Đồng: 20/11C Kỳ Đồng, Phường 9, Quận 3, Tp.HCM; Cơ sở Tam Đảo: TT17 Tam Đảo, Phường 15, Quận 10, Tp.HCM (Trường TCN KT NV Tôn Đức Thắng)', NULL, N'(028) 3834 4856 - 6297 3210 - 6297 3211', N'Cao đẳng nghề Du lịch Sài Gòn', N'Dân lập', N'http://www.dulichsaigon.edu.vn/');
-INSERT INTO [dbo].[school] (school_id, address, information, phone, shool_name, type_school, website)
-VALUES
+(5, N'347A Nguyễn Thượng Hiền, Phường 11, Quận 10, Tp.HCM', NULL, N'(028) 3834 4856 - 6297 3210 - 6297 3211', N'Cao đẳng nghề Du lịch Sài Gòn', N'Dân lập', N'http://www.dulichsaigon.edu.vn/'),
 (6, N'Số 232 Nguyễn Văn Hưởng, Phường Thảo Điền, Quận 2, Thành Phố Hồ Chí Minh', NULL, N'086.281.8696', N'Cao đẳng Hàng hải II', N'Công lập', N'http://cdhanghai.edu.vn'),
-(7, N'Cơ sở 1: Số 235 Hoàng Sa, phường Tân Định, Quận 1, Thành phố Hồ Chí Minh; Cơ sở 2: Số 1, đường 17, phường Linh Chiểu, quận Thủ Đức, Thành phố Hồ Chí Minh', NULL, N'(028).3526.7377', N'Cao đẳng nghề Thành phố Hồ Chí Minh', N'Công lập', N'http://www.caodangnghehcm.edu.vn/'),
-(8, N'Tòa nhà SaigonTech (Đường số 5, Lô 14, Công viên Phần Mềm Quang Trung, Quận 12, Tp. HCM)', NULL, N'0968 253 307, (028) 37151998, (028) 37155033', N'Cao đẳng Sài Gòn', N'Công lập', N'http://www.caodangsaigon.edu.vn/'),
+(7, N'Số 235 Hoàng Sa, phường Tân Định, Quận 1, Thành phố Hồ Chí Minh', NULL, N'(028).3526.7377', N'Cao đẳng nghề Thành phố Hồ Chí Minh', N'Công lập', N'http://www.caodangnghehcm.edu.vn/'),
+(8, N'Tòa nhà SaigonTech, Đường số 5, Lô 14, Công viên Phần Mềm Quang Trung, Quận 12, Tp. HCM', NULL, N'0968 253 307, (028) 37151998, (028) 37155033', N'Cao đẳng Sài Gòn', N'Công lập', N'http://www.caodangsaigon.edu.vn/'),
 (9, N'Số 05 Nam Quốc Cang, P.Phạm Ngũ Lão, Quận 1, TPHCM', NULL, N'0901.234.5678', N'Cao đẳng Văn hóa Nghệ thuật TP.HCM', N'Dân lập', N'http://vhnthcm.edu.vn/'),
 (10, N'368/33 Điện Biên Phủ, P.11, Q. Bình Thạnh', NULL, N'(028) 3868 2222', N'Cao đẳng Viễn Đông', N'Công lập', N'https://tuyensinh.viendong.edu.vn/'),
 (11, N'251 Điện Biên Phủ, P.7, Q.3', NULL, N'(028) 3930 3933', N'Cao đẳng Xây dựng Tp. Hồ Chí Minh', N'Công lập', N'https://hcmcc.edu.vn/'),
@@ -57,8 +55,8 @@ VALUES
 (16, N'280/33 Điện Biên Phủ, P.7, Q.3', NULL, N'(028) 3864 3939', N'Khoa Y - ĐHQG TP.HCM', N'Công lập', N'https://med.ump.edu.vn/'),
 (17, N'112 Nguyễn Du, Quận 1, Tp.Hồ Chí Minh', NULL, N'(84 8) 38 225 841', N'Nhạc viện Thành phố Hồ Chí Minh', N'Công lập', N'http://hcmcons.vn/'),
 (18, N'450-451 Lê Văn Việt, phường Tăng Nhơn Phú A, quận 9, TP. Hồ Chí Minh', NULL, N'(028).3896.6798 - (028).7300.1155', N'Phân hiệu Đại học Giao thông vận tải tại TP.HCM', N'Công lập', N'http://www.utc2.edu.vn/'),
-(19, N'Cơ sở chính: Km 18 Xa lộ Hà Nội, P. Linh Trung, Q. Thủ Đức, TP. Hồ Chí Minh.', NULL, N'(028) 3896 2363', N'Đại học An ninh Nhân dân', N'Công lập', N'hvannd.edu.vn'),
-(20, N'Cơ sở 1: 268 Lý Thường Kiệt, Phường 14, Quận 10, TP. Hồ Chí Minh.; Cơ sở 2: Khu đô thị Đại học Quốc gia TP.HCM, Linh Trung, Thủ Đức, TP. Hồ Chí Minh.', NULL, N'(028) 3864 7256', N'Đại học Bách Khoa - ĐHQG TP.HCM', N'Công lập', N'hcmut.edu.vn');
+(19, N'Km 18 Xa lộ Hà Nội, P. Linh Trung, Q. Thủ Đức, TP. Hồ Chí Minh', NULL, N'(028) 3896 2363', N'Đại học An ninh Nhân dân', N'Công lập', N'hvannd.edu.vn'),
+(20, N'268 Lý Thường Kiệt, Phường 14, Quận 10, TP. Hồ Chí Minh', NULL, N'(028) 3864 7256', N'Đại học Bách Khoa - ĐHQG TP.HCM', N'Công lập', N'hcmut.edu.vn');
 
 
 
@@ -294,7 +292,6 @@ VALUES
 (22, N'Truyền thông đa phương tiện'),
 (23, N'Cơ khí'),
 (24, N'Điện - Điện tử');
-
 
 
 
