@@ -26,7 +26,12 @@ public class SchoolDetails implements Serializable {
     @Column(name="SchoolId")
     private int schoolId;
 
+    @Column(name = "Point")
+    private Double point;
+    
     @OneToOne
     @JoinColumn(name = "SchoolId", insertable = false, updatable = false)
     private School school;
+    
+    
 }

@@ -2,9 +2,11 @@ package com.fpoly.Service;
 
 import com.fpoly.Repository.MajorRepository;
 import com.fpoly.Repository.MajorSchoolRepository;
+import com.fpoly.Repository.SchoolDetailRepository;
 import com.fpoly.Repository.SchoolRepository;
 import com.fpoly.entity.Major;
 import com.fpoly.entity.School;
+import com.fpoly.entity.SchoolDetails;
 import com.fpoly.entity.Major_School;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,6 +25,11 @@ public class SchoolService {
 
     @Autowired
     private MajorSchoolRepository majorSchoolRepository;
+    
+    @Autowired
+    private SchoolDetailRepository schoolDetailRepository;
+    
+
 
     public List<School> findSchoolsByCriteria(String name, String address, Double minPoint, Double maxPoint, String majorName) {
         List<School> allSchools = schoolRepository.findAll();
@@ -30,14 +37,21 @@ public class SchoolService {
         return allSchools.stream()
             .filter(school -> (name == null || name.isEmpty() || school.getSchoolName().toLowerCase().contains(name.toLowerCase())))
             .filter(school -> (address == null || address.isEmpty() || school.getAddress().toLowerCase().contains(address.toLowerCase())))
-            .filter(school -> (majorName == null || majorName.isEmpty() || school.getMajorSchools().stream()
-                .anyMatch(ms -> ms.getMajor().getMajorName().toLowerCase().contains(majorName.toLowerCase()) &&
-                                (minPoint == null || ms.getPoint() >= minPoint) &&
-                                (maxPoint == null || ms.getPoint() <= maxPoint))))
+//            .filter(school -> (majorName == null || majorName.isEmpty() || school.getSchoolDetails().stream()
+//                .anyMatch(ms -> ms.getMajor().toLowerCase().contains(majorName.toLowerCase()) &&
+//                                (minPoint == null || ms.getPoint() >= minPoint) &&
+//                                (maxPoint == null || ms.getPoint() <= maxPoint))))
+            
             .collect(Collectors.toList());
     }
 
     public List<Major> getAllMajors() {
         return majorRepository.findAll();
     }
+    public List<SchoolDetails> getSchoolMajors(){
+    	return  schoolDetailRepository.findAll();
+    }
+    public List<Major_School> getPoint(){
+    	return majorSchoolRepository.findAll();
+    	}
 }

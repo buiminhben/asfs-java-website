@@ -36,4 +36,6 @@ public class School implements Serializable {
 
     @OneToMany(mappedBy = "school")
     private List<Major_School> majorSchools;
+    @OneToOne(mappedBy = "school")
+    private SchoolDetails schoolDetails;
 }

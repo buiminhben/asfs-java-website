@@ -16,8 +16,10 @@ import com.fpoly.Service.SchoolService;
 import com.fpoly.dao.NewDao;
 import com.fpoly.dao.UserCommentDao;
 import com.fpoly.entity.Major;
+import com.fpoly.entity.Major_School;
 import com.fpoly.entity.New;
 import com.fpoly.entity.School;
+import com.fpoly.entity.SchoolDetails;
 import com.fpoly.entity.UserComments;
 
 import java.util.List;
@@ -35,6 +37,7 @@ public class indexController {
 
     @Autowired
     private SchoolService schoolService;
+    
 
     @GetMapping("/home")
     public String home(Model model) {
@@ -53,7 +56,17 @@ public class indexController {
         // Đổ dữ liệu vào combobox ngành
         List<Major> majors = schoolService.getAllMajors();
         model.addAttribute("majors", majors);
-
+        
+        //Dữ liệu ngành của từng trường
+        List<SchoolDetails> schoolmajors = schoolService.getSchoolMajors();
+        model.addAttribute("schoolmajors",schoolmajors);
+        
+        // Điểm
+        List<Major_School> majorschools = schoolService.getPoint();
+        model.addAttribute("majorschools", majorschools);
+        
+        
+        
         return "index";
     }
 
@@ -76,8 +89,9 @@ public class indexController {
         // Đổ dữ liệu vào combobox ngành
         List<Major> majors = schoolService.getAllMajors();
         model.addAttribute("majors", majors);
-
+        List<SchoolDetails> schoolmajors = schoolService.getSchoolMajors();
+        model.addAttribute("schoolmajors",schoolmajors);
         return "index"; 
-    }
+    } 
     
 }

@@ -22,9 +22,6 @@ public class Major_School implements Serializable {
     @Column(name = "MajorId")
     private int majorId;
 
-    @Column(name = "Point")
-    private Double point;
-
     @ManyToOne
     @JoinColumn(name = "SchoolId", insertable = false, updatable = false)
     private School school;
